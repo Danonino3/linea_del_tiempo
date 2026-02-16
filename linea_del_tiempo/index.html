@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Línea del tiempo</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<!-- BOTÓN CAMBIO -->
+<button class="switch-btn" onclick="mostrarIOS()">
+    Línea del tiempo iOS
+</button>
+
+<h1 class="titulo" id="mainTitle">Línea del tiempo de Android</h1>
+
+<!-- ================= ANDROID ================= -->
+<div class="timeline" id="androidTimeline">
+
+    <!-- eclair -->
+
+    <div class="item rojo">
+        <div class="marco">
+            <div class="polaroid" onclick="toggle(this)">
+                <span class="estrella">⭐</span>
+                <img src="foto1.png">
+                <div class="year">2009</div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <h1><center>Android Eclair (oct. 2009)</center></h1>
+            <p><center>También conocido como <b>Android 2.0</b> y <b>Android 2.1</b> fue la quinta versión descontinuada del 
+                sistema operativo móvil de código abierto Android desarrollado por Google. 
+                Mejora de la velocidad de escritura en el teclado virtual mediante el uso de datos multitouch</center></p>
+            <p><b><center>Características:</center></b></p>
+<ul><center>
+    <li>En esta versión las cosas cambiaron y no se limita a ser una simple actualización.</li>
+    <li>La velocidad de hardware se optimiza.</li>
+    <li>Soporta pantallas de mayor tamaño y resolución.</li>
+    <li>Cambia la interfaz de usuario.</li>
+    <li>El navegador soporta HTML5.</li>
+    <li>Soporta Microsoft Exchange.</li>
+    <li>Soporte integrado de flash para la cámara.</li>
+    <li>MotionEvent mejorado para eventos multi-touch.</li>
+</ul></center>
+
+        </div>
+    </div>
+
+    <!-- froyo -->
+
+    <div class="item naranja right">
+        <div class="marco">
+            <div class="polaroid" onclick="toggle(this)">
+                <span class="estrella">⭐</span>
+                <img src="foto2.png">
+                <div class="year">2010</div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <h1><center>Android Froyo (mayo 2010)</center></h1>
+            <p><center>Android 2.2 Froyo (2010) introdujo mejoras significativas en velocidad y rendimiento, destacando por la compilación 
+                JIT, motor JavaScript V8, soporte para Flash 10.1, instalación de apps en la memoria externa (SD), 
+                punto de acceso Wi-Fi/anclaje USB y el servicio C2DM. La estructura se basa en las capas estándar de Android 
+                (Kernel Linux, Bibliotecas, Android Runtime, Framework, Aplicaciones). </center></p>
+        </div>
+    </div>
+
+    <!-- gingerbread -->
+
+    <div class="item amarillo">
+        <div class="marco">
+            <div class="polaroid" onclick="toggle(this)">
+                <span class="estrella">⭐</span>
+                <img src="foto3.png">
+                <div class="year">2010</div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <h1><center>Android Gingerbread (dic 2010)</center></h1>
+            <p><center>Android 2.3 Gingerbread, lanzado por Google en 2010, fue una versión fundamental que mejoró la velocidad, interfaz y gestión energética de la plataforma.</center></p>
+                <p><b><center>Nuevas funciones para el usuario</center></b></p>
+                <ul><center>
+                    <li>Mejoras en la IU para ofrecer simplicidad y velocidad.</li>
+                    <li>Entrada de texto más intuitiva y rápida.</li>
+                    <li>Selección de palabras y copiado y pegado con un solo toque.</li>
+                    <li>Administración de energía mejorada.</li>
+                    <li>Control sobre las aplicaciones</li>
+                    <li>Nuevas formas de comunicarse y organizar</li>
+                    <li>Llamadas por internet.</li>
+                </ul></center>
+                <p><center>La interfaz de usuario de Gingerbread se perfeccionó de muchas maneras, haciéndola más fácil de dominar, más rápida de usar y más eficiente en el consumo de energía.</center></p>
+        </div>
+    </div>
+
+    <!-- honeycomb -->
+
+    <div class="item verde right">
+        <div class="marco">
+            <div class="polaroid" onclick="toggle(this)">
+                <span class="estrella">⭐</span>
+                <img src="foto4.png">
+                <div class="year">2011</div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <h1><center>Android Honeycomb (feb. 2011)</center></h1>
+            <p><center>Android 3.0 Honeycomb, lanzado en febrero de 2011 con la Motorola Xoom, fue la octava versión principal de Android y 
+                la primera diseñada específicamente para tabletas. Introdujo una interfaz "holográfica" de color azul, botones virtuales 
+                en pantalla (inicio, atrás, aplicaciones recientes) y widgets redimensionables, marcando una evolución significativa en el 
+                diseño de la interfaz de usuario. </center></p>
+                <p><b><center>Características:</center></b></p>
+                <ul><center>
+                    <li>Interfaz de Usuario.</li>
+                    <li>Multitarea y Navegación.</li>
+                    <li>Widgets y Pantalla de Inicio.</li>
+                    <li>Navegador Web.</li>
+                    <li>Aplicaciones Optimizadas.</li>
+                    <li>Rendimiento y Hardware.</li>
+                    <li>Actualizaciones (MR1/3.1 y 3.2).</li>
+                </center></ul>
+        </div>
+    </div>
+
+    <!-- Ice cream -->
+
+    <div class="item azul">
+        <div class="marco">
+            <div class="polaroid" onclick="toggle(this)">
+                <span class="estrella">⭐</span>
+                <img src="foto5.png">
+                <div class="year">2011</div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <h1><center>Android Ice Cream Sándwich (oct. 2011)</center></h1>
+            <p><center>Android 4.0 Ice Cream Sandwich (ICS), lanzado por Google en octubre de 2011, fue una versión clave que 
+                unificó las plataformas de teléfonos y tablets, introduciendo una interfaz moderna (Holo) con botones suaves, widgets 
+                redimensionables y multitarea mejorada.</center></p>
+            <p><center><b>Características:</b></center></p>
+            <ul><center>
+                <li>Interfaz de Usuario (Holo).</li>
+                <li>Gestión de Widgets y Aplicaciones.</li>
+                <li>Navegador Web.</li>
+                <li>Desbloqueo Facial (Face Unlock).</li>
+                <li>Multimedia y Cámara.</li>
+                <li>Funcionalidades Técnicas.</li>
+            </center></ul>
+        </div>
+    </div>
+
+    <!-- Jelly bean -->
+
+    <div class="item morado right">
+        <div class="marco">
+            <div class="polaroid" onclick="toggle(this)">
+                <span class="estrella">⭐</span>
+                <img src="foto6.png">
+                <div class="year">2012</div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <h1><center>Android Jelly Bean (julio 2012)</center></h1>
+            <p><center></center></p>
+        </div>
+    </div>
+
+    <!-- kitkat -->
+
+    <div class="item rosa">
+        <div class="marco">
+            <div class="polaroid" onclick="toggle(this)">
+                <span class="estrella">⭐</span>
+                <img src="foto7.png">
+                <div class="year">2013</div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <h1><center>Android KitKat (oct. 2013)</center></h1>
+            <p><center></center></p>
+        </div>
+    </div>
+
+    <!-- lollipop -->
+
+    <div class="item marron right">
+        <div class="marco">
+            <div class="polaroid" onclick="toggle(this)">
+                <span class="estrella">⭐</span>
+                <img src="foto8.png">
+                <div class="year">2014</div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <h1><center>Android Lollipop (nov. 2014)</center></h1>
+            <p><center></center></p>
+        </div>
+    </div>
+
+    <!-- marshmallow -->
+
+    <div class="item negro">
+        <div class="marco">
+            <div class="polaroid" onclick="toggle(this)">
+                <span class="estrella">⭐</span>
+                <img src="foto9.png">
+                <div class="year">2015</div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <h1><center>Android Marshmallow (mayo 2015)</center></h1>
+            <p><center></center></p>
+        </div>
+    </div>
+
+    <!-- nougat -->
+
+    <div class="item rojo right">
+        <div class="marco">
+            <div class="polaroid" onclick="toggle(this)">
+                <span class="estrella">⭐</span>
+                <img src="foto10.png">
+                <div class="year">2016</div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <h1><center>Android Nougat (agosto 2016)</center></h1>
+            <p><center></center></p>
+        </div>
+    </div>
+
+    <!-- oreo -->
+
+    <div class="item naranja">
+        <div class="marco">
+            <div class="polaroid" onclick="toggle(this)">
+                <span class="estrella">⭐</span>
+                <img src="foto11.png">
+                <div class="year">2017</div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <h1><center>Android Oreo (agosto 2017)</center></h1>
+            <p><center></center></p>
+        </div>
+    </div>
+
+    <!-- pie -->
+
+    <div class="item amarillo right">
+        <div class="marco">
+            <div class="polaroid" onclick="toggle(this)">
+                <span class="estrella">⭐</span>
+                <img src="foto12.png">
+                <div class="year">2018</div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <h1><center>Android Pie (agosto 2018)</center></h1>
+            <p><center></center></p>
+        </div>
+    </div>
+
+    <!-- android 10 -->
+
+    <div class="item verde">
+        <div class="marco">
+            <div class="polaroid" onclick="toggle(this)">
+                <span class="estrella">⭐</span>
+                <img src="foto13.png">
+                <div class="year">2019</div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <h1><center>Android 10 (sept. 2019)</center></h1>
+            <p><center></center></p>
+        </div>
+    </div>
+
+    <!-- android 11 -->
+
+    <div class="item azul right">
+        <div class="marco">
+            <div class="polaroid" onclick="toggle(this)">
+                <span class="estrella">⭐</span>
+                <img src="foto14.png">
+                <div class="year">2020</div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <h1><center>Android 11 (sept. 2020)</center></h1>
+            <p><center></center></p>
+        </div>
+    </div>
+
+    <!-- android 12 -->
+
+    <div class="item morado">
+        <div class="marco">
+            <div class="polaroid" onclick="toggle(this)">
+                <span class="estrella">⭐</span>
+                <img src="foto15.png">
+                <div class="year">2021</div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <h1><center>Android 12 (oct. 2021)</center></h1>
+            <p><center></center></p>
+        </div>
+    </div>
+
+    <!-- android 13 -->
+
+    <div class="item rosa right">
+        <div class="marco">
+            <div class="polaroid" onclick="toggle(this)">
+                <span class="estrella">⭐</span>
+                <img src="foto16.png">
+                <div class="year">2022</div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <h1><center>Android 13 (agosto 2022)</center></h1>
+            <p><center></center></p>
+        </div>
+    </div>
+
+    <!-- android 14 -->
+
+    <div class="item marron">
+        <div class="marco">
+            <div class="polaroid" onclick="toggle(this)">
+                <span class="estrella">⭐</span>
+                <img src="foto17.png">
+                <div class="year">2023</div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <h1><center>Android 14 (oct. 2023)</center></h1>
+            <p><center></center></p>
+        </div>
+    </div>
+
+    <!-- android 15 -->
+
+    <div class="item negro right">
+        <div class="marco">
+            <div class="polaroid" onclick="toggle(this)">
+                <span class="estrella">⭐</span>
+                <img src="foto18.png">
+                <div class="year">2024</div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <h1><center>Android 15 (oct. 2024)</center></h1>
+            <p><center></center></p>
+        </div>
+    </div>
+
+</div>
+
+<!-- ================= IOS ================= -->
+<div class="timeline oculto" id="iosTimeline">
+
+    <!-- ios 15 -->
+
+    <div class="item rojo">
+        <div class="marco">
+            <div class="polaroid" onclick="toggle(this)">
+                <span class="estrella">⭐</span>
+                <img src="ios5.png">
+                <div class="year">2023</div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <h2>iPhone OS 1</h2>
+            <p>Primera versión del sistema del iPhone.</p>
+        </div>
+    </div>
+
+    <!-- ios 16 -->
+
+    <div class="item naranja right">
+        <div class="marco">
+            <div class="polaroid" onclick="toggle(this)">
+                <span class="estrella">⭐</span>
+                <img src="ios4.png">
+                <div class="year">2010</div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <h2>iOS 4</h2>
+            <p>Introdujo multitarea.</p>
+        </div>
+    </div>
+
+    <!-- ios 17 -->
+
+    <div class="item amarillo">
+        <div class="marco">
+            <div class="polaroid" onclick="toggle(this)">
+                <span class="estrella">⭐</span>
+                <img src="ios3.png">
+                <div class="year">2013</div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <h2>iOS 7</h2>
+            <p>Rediseño completo.</p>
+        </div>
+    </div>
+
+    <!-- ios 18 -->
+
+    <div class="item verde right">
+        <div class="marco">
+            <div class="polaroid" onclick="toggle(this)">
+                <span class="estrella">⭐</span>
+                <img src="ios2.png">
+                <div class="year">2020</div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <h2>iOS 14</h2>
+            <p>Widgets en pantalla principal.</p>
+        </div>
+    </div>
+
+    <!-- ios 26 -->
+
+    <div class="item azul">
+        <div class="marco">
+            <div class="polaroid" onclick="toggle(this)">
+                <span class="estrella">⭐</span>
+                <img src="ios1.png">
+                <div class="year">2025</div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <h2>iOS 17</h2>
+            <p>Mejoras de personalización.</p>
+        </div>
+    </div>
+
+</div>
+
+<!-- FLECHAS -->
+<div class="scroll-buttons">
+    <div class="scroll-btn up" onclick="scrollUp()">▲</div>
+    <div class="scroll-btn down" onclick="scrollDown()">▼</div>
+</div>
+
+<!-- BARRA AÑO -->
+<div class="year-indicator" id="yearIndicator">2009</div>
+
+<script>
+
+function toggle(element) {
+    const item = element.closest('.item');
+    const year = item.querySelector('.year').textContent;
+    const yearIndicator = document.getElementById("yearIndicator");
+
+    document.querySelectorAll('.item').forEach(i => {
+        if (i !== item) i.classList.remove('active');
+    });
+
+    item.classList.toggle('active');
+    yearIndicator.textContent = year;
+
+    yearIndicator.className = "year-indicator";
+    const colores = ["rojo","naranja","amarillo","verde","azul","morado","rosa","marron","negro","gris"];
+
+    colores.forEach(color => {
+        if(item.classList.contains(color)){
+            yearIndicator.classList.add(color);
+        }
+    });
+}
+
+function scrollUp() {
+    window.scrollBy({ top: -500, behavior: "smooth" });
+}
+
+function scrollDown() {
+    window.scrollBy({ top: 500, behavior: "smooth" });
+}
+
+function mostrarIOS() {
+    const android = document.getElementById("androidTimeline");
+    const ios = document.getElementById("iosTimeline");
+    const boton = document.querySelector(".switch-btn");
+    const titulo = document.getElementById("mainTitle");
+
+    if (ios.classList.contains("oculto")) {
+        ios.classList.remove("oculto");
+        android.classList.add("oculto");
+        titulo.textContent = "Línea del tiempo de iOS";
+        boton.textContent = "Línea del tiempo Android";
+    } else {
+        ios.classList.add("oculto");
+        android.classList.remove("oculto");
+        titulo.textContent = "Línea del tiempo de Android";
+        boton.textContent = "Línea del tiempo iOS";
+    }
+}
+
+</script>
+
+</body>
+</html>
